@@ -1,0 +1,79 @@
+header > nav > ul > li:nth-child(5) {
+    border-bottom: rgb(102, 179, 243) 3px solid; 
+}
+
+.reschedule_failed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.failed_dags {
+    border: 2px solid black;
+    /* border-radius: 10px; */
+}
+
+.failed_dags th {
+    background-color: #004DB2;
+    color: white;
+}
+
+.failed_dags th, .failed_dags td{
+    border: 1.5px solid black;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.reschedule_techniques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Techniques_Buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* #Techniques_Buttons > button {
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
+}
+
+#Techniques_Buttons > button:hover {
+    transform: scale(1.05);
+} */
+
+#Techniques_Buttons > button {
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #004DB2; /* Initial background color */
+    color: white;              /* Text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border-radius: 5px;        /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Initial box-shadow */
+}
+
+#Techniques_Buttons > button:hover {
+    transform: scale(1.05);   /* Slight zoom */
+    background-color: #002452; /* Darker blue on hover */
+    box-shadow: 0px 4px 10px #002452; /* Stronger shadow on hover */
+    color: #f8f9fa; /* Optional: Change text color on hover */
+}
+
+
+#status {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Titillium Web", sans-serif;
+}

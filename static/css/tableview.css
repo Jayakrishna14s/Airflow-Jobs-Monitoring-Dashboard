@@ -1,0 +1,119 @@
+header > nav > ul > li:nth-child(2) {
+    border-bottom: rgb(102, 179, 243) 3px solid; 
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container > h1 {
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Table container for scrolling */
+#table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    /* overflow: auto; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Table styling */
+#dag-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Minimum width to ensure proper column sizing */
+}
+
+#dag-table th, #dag-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+#dag-table th {
+    text-align: center;
+}
+
+/* Table header styling */
+#dag-table th {
+    background-color: #f9f9f9;
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0; /* Keeps header sticky on scroll */
+    z-index: 1;
+}
+
+/* Table body styling */
+#dag-table td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Column width definitions */
+#dag-table th, #dag-table td {
+    width: 250px; /* Adjust width for each column */
+}
+
+/* Even rows for readability */
+#dag-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Hover effect */
+#dag-table tr:hover {
+    background-color: #7c2a2a;
+}
+
+
+
+/* Responsive design: adjust table content on smaller screens */
+@media (max-width: 768px) {
+    #dag-table th, #dag-table td {
+        width: 150px; /* Adjust column width for smaller screens */
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #dag-table th, #dag-table td {
+        width: 120px; /* Adjust column width for very small screens */
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+}
+
+
+#column-toggle {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    /*max-width: 500px; /* optional, to keep it compact */
+  }
+  #column-toggle label {
+    display: flex;
+    align-items: center;
+  }

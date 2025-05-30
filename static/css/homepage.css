@@ -1,0 +1,134 @@
+header > nav > ul > li:nth-child(1) {
+    border-bottom: rgb(102, 179, 243) 3px solid; 
+}
+
+#airflow-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.airflow-logo{
+    padding: 20px 0 20px 0;
+    margin: 40px 0 20px 0;
+    animation: rotate 2500s linear infinite;
+    transform-origin: center;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360000deg);
+    }
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    color: rgb(42, 62, 170);
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Information Sections */
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.info-card {
+    background-color: #eaeaea;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info-card h2 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #004db2;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.info-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+
+
+.summary-metrics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 90px;
+
+}
+.metric {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: left;
+}
+.metric h3 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.health h3 {
+    font-size: 14px;
+}
+
+.metric p {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.health p {
+    font-size: 18px;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 50px;
+}
